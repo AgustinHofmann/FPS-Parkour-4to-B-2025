@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class EnemyObject : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    public int damage = 5;
+    public HealthManager healthManager;
+
     void Start()
     {
         healthManager = FindObjectOfType<HealthManager>();
